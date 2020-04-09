@@ -19,7 +19,7 @@ async def sum(first, second):
 
 async def main(first, second):
     sum_task = asyncio.create_task(sum(first, second))
-    mul_task = asyncio.create_task(sum(first, second))
+    mul_task = asyncio.create_task(mul(first, second))
     await sum_task
     await mul_task
 
@@ -29,7 +29,7 @@ asyncio.run(main(7, 8))
 """
 Result
 Calculating sum of 7 and 8
-Calculating sum of 7 and 8
+Calculating multiply of 7 and 8
 Sum is 15
-Sum is 15
+Multiply of 56
 """
